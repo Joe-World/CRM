@@ -34,7 +34,7 @@
 
 ## 技术点：
 
-*前端：BootStrap+jQuery+日期控件+bs分页插件+Echarts
+-前端：BootStrap+jQuery+日期控件+bs分页插件+Echarts
 
 *后端：SpringMVC+MyBatis +Spring
 
