@@ -1,0 +1,11 @@
+1,统计图表：以更专业、更形象的形式展示系统中的数据。
+  
+  销售漏斗图：展示商品销售数据、销售业绩
+              展示交易表中的数据,统计交易表中各个阶段的数量
+
+  报表插件:jfreechart,iReport,锐浪,echarts
+           
+  echarts的使用：
+         1)引入开发包：echarts.min.js
+	 2)创建容器：<div id="main" style="width: 600px;height:400px;"></div>
+	 3)当容器加载完成之后，对容器调用工具函数：

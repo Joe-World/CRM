@@ -1,0 +1,40 @@
+1，封装参数：
+   1)如果做查询条件，或者参数之间不是属于一个实体类对象，封装成map
+   2)如果做写数据，并且参数本来就是属于一个实体类对象，封装成实体类对象.
+
+2，使用jquery获取或者设置指定元素的value属性值：
+   获取：选择器.val();
+   设置：选择器.val(属性值);
+
+3,导出市场活动：
+   1)给"批量导出"按钮添加单击事件，发送导出请求
+   2)查询所有的市场活动
+   3)创建一个excel文件，并且把市场活动写到excel文件中
+   4)把生成的excel文件输出到浏览器(文件下载)
+
+   技术准备：
+       1)使用java生成excel文件：iText,apache-poi
+
+         关于办公文档插件使用的基本思想：把办公文档的所有元素封装成普通的Java类，
+	                                 程序员通过操作这些类达到操作办公文档目的。
+	 文件---------HSSFWorkbook
+	 页-----------HSSFSheet
+	 行-----------HSSFRow
+         列-----------HSSFCell
+	 样式---------HSSFCellStyle
+
+	 使用apache-poi生成excel：
+	     a)添加依赖：
+	            <dependency>
+		      <groupId>org.apache.poi</groupId>
+		      <artifactId>poi</artifactId>
+		      <version>3.15</version>
+		    </dependency>
+	     b)使用封装类生成excel文件：
+	       
+       2)文件下载：
+         filedownloadtest.jsp
+	 ActivityController
+	     |->fileDownload()
+
+	 *所有文件下载的请求只能发送同步请求。

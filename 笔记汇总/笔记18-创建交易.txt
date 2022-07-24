@@ -1,0 +1,48 @@
+1，可能性的可配置：用户提供配置文件，配置每一个阶段对应一个可能性；
+                   当用户选择阶段时，根据阶段获取可能性，显示到输入框。
+
+   1)提供配置文件：由用户提供,保存在后台服务器上。
+     配置文件：
+         a)xxxx.properties配置文件：key1=value1
+	                            key2=value2
+				    .....
+
+				    适合配置简单数据，几乎没有冗余数据，效率高
+				    解析相对简单：Properties，BundleResource
+	 b)xxx.xml配置文件：标签语言.
+	   <studentList>
+		   <student email="zs@163.com">
+			<id>1001</id>
+			<name>zs</name>
+			<age>20</age>
+		   </student>
+		   <student email="ls@163.com">
+			<id>1002</id>
+			<name>ls</name>
+			<age>20</age>
+		   </student>
+	   </studentList>
+	                            适合配置复杂数据，产生冗余数据，效率低
+				    解析相对复杂：dom4j,jdom
+	  配置可能性：possibility.properties
+	              阶段的名称做key，可能性做value
+
+   2)用户每次选择阶段，向后台发送请求。
+   3)后台提供controller，接收请求，根据选择的阶段，解析配置文件，获取对应的可能性。
+   4)把可能性返回前台，显示在输入框。
+
+2，客户名称自动补全：
+   
+   1)给输入框添加键盘弹起事件
+   2)后台接收到请求，根据名称模糊查询，返回到客户端
+   3)把查询到的数据显示在输入框下边
+     用户选择一个客户，实现自动补全
+   
+   自动补全插件：bs_typeahead
+        1)引入开发包：.css,.js
+	2)创建容器：<div> <input type="text">
+	3)当容器加载完成之后，对容器调用工具函数：
+	  
+     
+
+   

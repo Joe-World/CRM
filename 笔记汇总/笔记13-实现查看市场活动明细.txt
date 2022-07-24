@@ -1,0 +1,14 @@
+1，使用标签保存数据，以便在需要的时候能够获取到这些数据:
+   
+   给标签添加属性：
+       如果是表单组件标签，优先使用value属性，只有value不方便使用时，使用自定义属性;
+       如果不是表单组件标签，不推荐使用value，推荐使用自定义属性。
+
+   获取属性值时：
+       如果获取表单组件标签的value属性值：dom对象.value
+                                          jquery对象.val()
+       如果自定义的属性，不管是什么标签，只能用：jquery对象.attr("属性名");
+
+       <a style="text-decoration: none; cursor: pointer;" onclick="">ii测试03_2</a>
+
+       window.location.href='workbench/activity/detailActivity.do?id=74f60cc6f64c452fbf02c1aaa3b7e2fb

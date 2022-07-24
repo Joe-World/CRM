@@ -1,0 +1,58 @@
+1,添加市场活动备注：
+
+  jsp的运行原理：
+  xxx.jsp：1)、tocmat中运行：
+              把xxx.jsp翻译成一个servlet,
+	      运行servlet,运行的结果是一个html网页
+	      把html网页输出到浏览器
+	   2)、html网页在浏览器上运行：
+	      先从上到下加载html网页到浏览器，在加载过程中，运行前端代码
+	      当页面都加载完成，再执行入口函数.
+
+2,把页面片段显示在动态显示在页面中：
+  选择器.html(htmlStr)：覆盖显示在标签的内部
+  选择器.text(htmlStr)：覆盖显示在标签的内部
+  选择器.append(htmlStr)：追加显示在指定标签的内部的后边
+   <div id="myDiv">
+      aaaaaaaaa
+      bbbbbbbbb
+   </div>
+   var htmlStr="<p>ccccccccc</p>";
+    $("#myDiv").append(htmlStr);
+    <div id="myDiv">
+      aaaaaaaaa
+      bbbbbbbbb
+      <p>ccccccccc</p>
+   </div>
+  选择器.after(htmlStr)：追加显示在指定标签的外部的后边
+   <div id="myDiv">
+      aaaaaaaaa
+      bbbbbbbbb
+   </div>
+   var htmlStr="<p>ccccccccc</p>";
+    $("#myDiv").after(htmlStr);
+    <div id="myDiv">
+      aaaaaaaaa
+      bbbbbbbbb
+   </div>
+   <p>ccccccccc</p>
+   选择器.before(htmlStr)：追加显示在指定标签的外部的前边
+   <div id="myDiv">
+      aaaaaaaaa
+      bbbbbbbbb
+   </div>
+   var htmlStr="<p>ccccccccc</p>";
+    $("#myDiv").before(htmlStr);
+    <p>ccccccccc</p>
+    <div id="myDiv">
+      aaaaaaaaa
+      bbbbbbbbb
+   </div>
+   
+3,给元素扩展属性：html页面是可扩展的标记语言，可以给指定的标签任意扩展属性，只要属性名符合标识符的命名规则即可。
+  两个目的：
+      1)使用标签保存数据：
+        如果是表单组件标签，优先使用value属性，只有value不方便使用时，使用自定义属性;
+        如果不是表单组件标签，不推荐使用value，推荐使用自定义属性。
+      2)定位标签：
+        优先考虑id属性,其次考虑name属性，只有id和name属性都不方便使用时，才考虑使用自定义属性。

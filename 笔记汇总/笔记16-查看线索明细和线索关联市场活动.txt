@@ -1,0 +1,26 @@
+1，查看线索明细：
+  
+  tbl_clue
+  tbl_clue_remark
+  tbl_activity
+
+  tbl_clue                  tbl_acvtivity
+  id     fullname           id        name
+  1001   clue1              111       act1
+  1002   clue2              222       act2
+
+        tbl_clue_activity_relation
+	clue_id             activity_id
+        1001                111
+        1001                222
+	1002                111
+	1002                222
+  //查询clue1关联的市场活动信息  1001
+  select id,name
+  from tbl_acvtivity a
+  join tbl_clue_activity_relation car on a.id=car.activity_id
+  where car.clue_id=1001
+  
+2,线索关联市场活动：
+  根据activityName查询所有符合条件的市场活动
+  根据clueId查询已经关联过的市场活动

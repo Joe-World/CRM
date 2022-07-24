@@ -1,0 +1,21 @@
+1,导入市场活动：
+  
+  1)把用户计算机上的excel文件上传到服务器(文件上传)
+  2)使用java解析excel文件，获取excel文件中的数据
+  3)把解析出来的数据添加数据库中
+  4)返回响应信息
+
+  技术准备：
+      1)文件上传：
+        fileuploadtest.jsp
+	ActivityController
+	        |->fileUpload()
+      2)使用java解析excel文件：iText,apache-poi
+        
+	关于办公文档插件使用的基本思想：把办公文档的所有元素封装成普通的Java类，
+	                                程序员通过操作这些类达到操作办公文档目的。
+	 文件---------HSSFWorkbook
+	 页-----------HSSFSheet
+	 行-----------HSSFRow
+         列-----------HSSFCell
+        

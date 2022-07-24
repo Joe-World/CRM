@@ -1,0 +1,61 @@
+1，登录验证：
+
+   1)过滤器：
+     a)implements Filter{
+         --init
+	 --doFilter
+	 --destroy
+       }
+     b)配置过滤器:web.xml
+   2)拦截器：
+     a)提供拦截器类：implements HandlerInterceptor{
+			  --pre
+			  --post
+			  --after
+                     }
+     b)配置拦截器：springmvc.xml
+    
+2，页面切割技术：
+  1)<frameset>和<frame>：
+    <frameset>：用来切割页面.
+                <frameset cols="20%,60%,20%" rows="10%,80%,10%">
+    <frame>：显示页面.
+                <frame src="url">
+
+		<frameset cols="20%,60%,20%">
+			<frame src="url1" name="f1">
+			<frame src="url2" name="f2">
+			<frame src="url3" name="f3">
+		</frameset>
+
+             每一个<frame>标签就是一个独立的浏览器窗口。
+
+	     <a href="url" target="f3">test</a>
+  2)<div>和<iframe>：
+    <div>：切割页面。
+            <div style="height:10%;width=20%">
+   <iframe>:显示页面。
+            <div style="height:10%;width=20%">
+		<iframe href="url">
+	    </div>
+3,创建市场活动：
+  
+  模态窗口：模拟的窗口,本质上是<div>，通过设置z-index大小来实现的;
+            初始时，z-index初始参数是<0，所以不显示；
+	    需要显示时，z-index值设置成>0即可。
+
+	    bootstrap来控制z-index的大小。
+  控制模态窗口的显示与隐藏：
+            1)方式一：通过标签的属性data-toggle="modal" data-target="模态窗口的id"
+	    2)方式二：通过js函数控制：
+	              选择器(选中div).modal("show");//显示选中的模态窗口
+		      选择器(选中div).modal("hide");//关闭选中的模态窗口
+            3)方式三：通过标签的属性data-dismiss=""
+		      点击添加了data-dismiss=""属性的标签，自动关闭该标签所在的模态窗口。
+  模态窗口的意义：
+            window.open("url","_blank");
+	    模态窗口本质上就是原来页面中的一个<div>，只有一个页面;所有的操作都是在同一个页面中完成。
+
+
+
+       
