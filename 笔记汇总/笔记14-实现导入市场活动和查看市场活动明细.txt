@@ -1,0 +1,17 @@
+1,文件上传：上传的文件跟用户约定好的。
+
+2,js截取字符串：
+  str.substr(startIndex,length)
+  str.substr(startIndex)//从下标为startIndex的字符开始截取，截取到字符串的最后
+  str.substring(startIndex,endIndex)
+
+3,查看市场活动明细：
+  tbl_activity                   tbl_activity_remark
+  id    name                     id      note_content    activity_id
+  1001  act1                     111     remark1         1001
+  1002  act2                     222     remark2         1001
+                                 333     remark3         1002
+  //查询act1下所有的备注
+  select *
+  from tbl_activity_remark
+  where activity_id=1001
