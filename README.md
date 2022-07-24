@@ -51,5 +51,26 @@ Web服务器：Tomcat_9.0
 
 ## 部分页面:
 
-- 登录页面<br>
+- 登录页面<br><br>
 ![](https://github.com/Joe-World/CRM/blob/main/%E9%A1%B9%E7%9B%AE%E6%95%88%E6%9E%9C%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2.png)
+<br><br>
+
+- 导入市场活动<br><br>
+![](https://github.com/Joe-World/CRM/blob/main/%E9%A1%B9%E7%9B%AE%E6%95%88%E6%9E%9C%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/%E5%AF%BC%E5%85%A5%E5%B8%82%E5%9C%BA%E6%B4%BB%E5%8A%A8excel.png)
+<br><br>
+
+- 线索明细<br><br>
+![](https://github.com/Joe-World/CRM/blob/main/%E9%A1%B9%E7%9B%AE%E6%95%88%E6%9E%9C%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/%E7%BA%BF%E7%B4%A2%E6%98%8E%E7%BB%86.png)
+<br><br>
+
+- 创建交易<br><br>
+![](https://github.com/Joe-World/CRM/blob/main/%E9%A1%B9%E7%9B%AE%E6%95%88%E6%9E%9C%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/%E5%88%9B%E5%BB%BA%E4%BA%A4%E6%98%93.png)
+<br><br>
+
+- 交易明细<br><br>
+![](https://github.com/Joe-World/CRM/blob/main/%E9%A1%B9%E7%9B%AE%E6%95%88%E6%9E%9C%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/%E4%BA%A4%E6%98%93%E6%98%8E%E7%BB%86.png)
+<br><br>
+
+- 交易信息统计漏斗分析<br><br>
+![](https://github.com/Joe-World/CRM/blob/main/%E9%A1%B9%E7%9B%AE%E6%95%88%E6%9E%9C%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/%E4%BA%A4%E6%98%93%E7%BB%9F%E8%AE%A1%E6%BC%8F%E6%96%97%E5%88%86%E6%9E%90%E5%9B%BE.png)
+
