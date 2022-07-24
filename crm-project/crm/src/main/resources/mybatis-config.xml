@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--设置Mybatis的日志工厂，日志可以帮我们把重要的信息输出出来，这样出错的时候，可以借助日志可以查看哪里有问题-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <!--为此路径下的所有实体类起别名(默认驼峰命名法)别名，然后在 sql 映射配置文件中指定输入输出参数类型时使用的别名-->
+    <typeAliases>
+        <package name="org.burning.crm.model"/>
+    </typeAliases>
+    <!-- 扫描mapper-->
+    <mappers>
+        <package name="org.burning.crm.mapper"/>
+    </mappers>
+</configuration>
